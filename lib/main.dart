@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gsport/screens/home/home-screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,18 +11,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'GSport App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        backgroundColor: Color(0xFFFFFF),
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Gspot"),
-        ),
-        body: const Center(
-          child: Text("Gsport start"),
-        ),
-      ),
+      initialRoute: '/',
+      routes: {
+        "/": (context) => HomeScreen(),
+        // "/show_sport": (context) => (),
+        // "/quiz": (context) => (),
+        // "/choose_sport": (context) => (),
+      },
     );
   }
 }
