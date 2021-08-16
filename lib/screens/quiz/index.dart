@@ -15,7 +15,7 @@ class _WelcomeQuizState extends State<WelcomeQuiz> {
         title: Text("GSport App"),
       ),
       body: Container(
-        margin: EdgeInsets.only(top: 76),
+        margin: EdgeInsets.only(top: 76, right: 15, left: 15),
         child: Column(children: <Widget>[
           Container(child: Image.asset("assets/images/illustration.png")),
           Column(
