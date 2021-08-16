@@ -88,7 +88,7 @@ class ButtonNext extends StatelessWidget {
       onTap: () {
         Navigator.pushNamed(
           context,
-          'quizSteps',
+          '/quizSteps',
         );
       },
       child: Container(
