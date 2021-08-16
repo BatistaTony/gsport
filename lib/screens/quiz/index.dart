@@ -28,7 +28,9 @@ class _WelcomeQuizState extends State<WelcomeQuiz> {
                     style: TextStyle(color: Colors.black, fontSize: 15),
                     textAlign: TextAlign.justify),
               ),
-              ButtonNext(isFilled: true)
+              Container(
+                  margin: EdgeInsets.only(top: 350),
+                  child: ButtonNext(isFilled: true))
             ],
           )
         ]),

@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             press: () => chooseDecision(1),
                           ),
                           ButtonQuiz(
-                            title: "Me ajuda a escolher, GSport!",
+                            title: "Me ajude a escolher, GSport!",
                             isSelected: _choosed == 2,
                             press: () => chooseDecision(2),
                           )
@@ -84,8 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     if (_choosed == 2) {
-      //go to quiz
-      print(_choosed);
+      Navigator.pushNamed(context, '/quiz');
     }
   }
 }

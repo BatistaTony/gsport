@@ -174,7 +174,7 @@ class QuizStepsState extends State<QuizSteps> with TickerProviderStateMixin {
     if (_currentStep == 3) {
       Navigator.pushNamed(
         context,
-        '/quiz',
+        '/solutions',
       );
       return;
     }
