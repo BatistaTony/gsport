@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gsport/screens/choose-sport/choose-sport-screen.dart';
+import 'package:gsport/screens/choose-sport/questions.dart';
 import 'package:gsport/screens/home/home-screen.dart';
+import 'package:gsport/screens/show-solutions/solution-screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,8 +21,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         "/": (context) => HomeScreen(),
-        // "/show_sport": (context) => (),
-        // "/quiz": (context) => (),
+        "/show_sport": (context) => ChooseSportScreen(),
+        '/questions': (context) => Questions(),
+        "/solutions": (context) => ShowSolutionScreen(),
         // "/choose_sport": (context) => (),
       },
     );
